@@ -217,6 +217,27 @@
     object-fit: contain !important;
     border-radius: 8px;
     background: #f1f5f9;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .ritz .product-row:hover {
+      position: relative;
+      z-index: 20;
+    }
+
+    .ritz .product-row td:first-of-type:hover {
+      position: relative;
+      z-index: 30;
+    }
+
+    .ritz .product-row td:first-of-type:hover img {
+      position: relative;
+      z-index: 40;
+      transform: scale(2.2);
+      background: #ffffff;
+      box-shadow: 0 12px 30px rgba(16, 42, 67, 0.28);
+    }
   }
 
   .ritz .waffle td > div[style*="width"] {
